@@ -27,7 +27,7 @@ const services = [
     href: "/banho-e-tosa",
   },
   {
-    title: "Pet Care",
+    title: "PetCare",
     description: "Serviços profissionais de banho e tosa para deixar seu pet limpo, cheiroso e estiloso.",
     imageSrc: "/placeholder.svg?height=300&width=500",
     href: "/",
@@ -52,8 +52,8 @@ export default function Home() {
       <Carousel images={carouselImages} />
 
       <section className="py-16">
-        <div className="container-custom ">
-          <h2 className="heading-2 font-serif text-center mb-12 ">Nossos Serviços</h2>
+        <div className="container-custom">
+          <h2 className="heading-2 font-serif text-center mb-12">Nossos Serviços</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {services.map((service) => (
               <ServiceCard

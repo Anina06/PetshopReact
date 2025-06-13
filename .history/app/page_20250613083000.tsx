@@ -6,15 +6,15 @@ import { MapSection } from "@/components/map-section"
 
 const carouselImages = [
   {
-    src: "/imagens/banner.jpg?height=600&width=1200",
+    src: "public\imagens\banner.jpg?height=600&width=1200",
     alt: "Cachorro feliz após banho",
   },
   {
-    src: "/imagens/pagina-home/Banner-01.jpg?height=600&width=1200",
+    src: "/placeholder.svg?height=600&width=1200",
     alt: "Gato relaxando no hotel pet",
   },
   {
-    src: "/imagens/banho-e-tosa.png?height=600&width=1200",
+    src: "/placeholder.svg?height=600&width=1200",
     alt: "Cachorro em sessão de adestramento",
   },
 ]
@@ -25,12 +25,6 @@ const services = [
     description: "Serviços profissionais de banho e tosa para deixar seu pet limpo, cheiroso e estiloso.",
     imageSrc: "/placeholder.svg?height=300&width=500",
     href: "/banho-e-tosa",
-  },
-  {
-    title: "Pet Care",
-    description: "Serviços profissionais de banho e tosa para deixar seu pet limpo, cheiroso e estiloso.",
-    imageSrc: "/placeholder.svg?height=300&width=500",
-    href: "/",
   },
   {
     title: "Hotel Resort",
@@ -52,9 +46,9 @@ export default function Home() {
       <Carousel images={carouselImages} />
 
       <section className="py-16">
-        <div className="container-custom ">
-          <h2 className="heading-2 font-serif text-center mb-12 ">Nossos Serviços</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="container-custom">
+          <h2 className="heading-2 font-serif text-center mb-12">Nossos Serviços</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service) => (
               <ServiceCard
                 key={service.title}
