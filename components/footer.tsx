@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Instagram, Facebook, Twitter } from "lucide-react"
+import { LogoPaw } from "@/components/logo-paw"
 
 export function Footer() {
   return (
@@ -9,7 +10,9 @@ export function Footer() {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-serif font-bold text-accent mb-4">Elegance Pet Boutique</h3>
+            <div className="mb-4">
+              <LogoPaw size="small" />
+            </div>
             <p className="text-muted-foreground mb-4">
               Oferecemos os melhores serviços para o bem-estar do seu animal de estimação. Entre em contato conosco e
               agende uma visita!

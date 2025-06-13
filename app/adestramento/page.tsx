@@ -1,4 +1,5 @@
 import { ContactSection } from "@/components/contact-section"
+import { MapSection } from "@/components/map-section"
 
 export default function Adestramento() {
   return (
@@ -148,6 +149,7 @@ export default function Adestramento() {
       </section>
 
       <ContactSection />
+      <MapSection />
     </div>
   )
 }

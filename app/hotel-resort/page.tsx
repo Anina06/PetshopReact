@@ -1,5 +1,6 @@
 import { ContactSection } from "@/components/contact-section"
 import { Clock } from "lucide-react"
+import { MapSection } from "@/components/map-section"
 
 export default function HotelResort() {
   return (
@@ -96,6 +97,7 @@ export default function HotelResort() {
       </section>
 
       <ContactSection />
+      <MapSection />
     </div>
   )
 }

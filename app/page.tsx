@@ -2,6 +2,7 @@ import { Carousel } from "@/components/carousel"
 import { ServiceCard } from "@/components/service-card"
 import { ContactSection } from "@/components/contact-section"
 import { Heart, Shield, Clock } from "lucide-react"
+import { MapSection } from "@/components/map-section"
 
 const carouselImages = [
   {
@@ -124,6 +125,7 @@ export default function Home() {
       </section>
 
       <ContactSection />
+      <MapSection />
     </div>
   )
 }

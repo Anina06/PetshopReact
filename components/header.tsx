@@ -5,6 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { ThemeSwitcher } from "@/components/theme-switcher"
+import { LogoPaw } from "@/components/logo-paw"
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -21,9 +22,7 @@ export function Header() {
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-primary text-2xl font-bold font-serif">Elegance Pet</span>
-          </Link>
+          <LogoPaw />
 
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (

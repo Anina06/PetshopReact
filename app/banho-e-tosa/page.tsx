@@ -1,5 +1,7 @@
 import { ContactSection } from "@/components/contact-section"
 import { Scissors, Droplet, Heart, Star } from "lucide-react"
+// Adicione o import do MapSection no topo do arquivo
+import { MapSection } from "@/components/map-section"
 
 export default function BanhoETosa() {
   return (
@@ -126,6 +128,7 @@ export default function BanhoETosa() {
       </section>
 
       <ContactSection />
+      <MapSection />
     </div>
   )
 }
