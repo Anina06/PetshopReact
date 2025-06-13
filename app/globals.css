@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 340 80% 65%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 25 30% 85%;
+    --secondary-foreground: 20 15% 25%;
+    --muted: 20 15% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 20 30% 45%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 20 15% 85%;
+    --input: 20 15% 85%;
+    --ring: 340 80% 65%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 30 30% 98%;
+    --card: 0 0% 15%;
+    --card-foreground: 30 30% 98%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 30 30% 98%;
+    --primary: 340 70% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 25 20% 30%;
+    --secondary-foreground: 30 30% 98%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 30 20% 80%;
+    --accent: 20 30% 45%;
+    --accent-foreground: 30 30% 98%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 30 30% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 340 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 max-w-7xl;
+  }
+
+  .heading-1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-2xl md:text-3xl font-bold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 font-medium transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-6 py-3 font-medium transition-colors;
+  }
+
+  .btn-outline {
+    @apply border border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-6 py-3 font-medium transition-colors;
+  }
+}
