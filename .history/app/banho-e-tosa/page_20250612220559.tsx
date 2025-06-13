@@ -128,7 +128,7 @@ export default function BanhoETosa() {
       </section>
 
       <ContactSection />
-      
+      <MapSection />
     </div>
   )
 }

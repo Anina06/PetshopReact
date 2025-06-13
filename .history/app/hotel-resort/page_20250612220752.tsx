@@ -96,7 +96,7 @@ export default function HotelResort() {
         </div>
       </section>
 
-      <ContactSection />
+      <ContactSection /
     </div>
   )
 }

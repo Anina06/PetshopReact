@@ -97,6 +97,7 @@ export default function HotelResort() {
       </section>
 
       <ContactSection />
+     
     </div>
   )
 }

@@ -149,7 +149,7 @@ export default function Adestramento() {
       </section>
 
       <ContactSection />
-      
+      <MapSection />
     </div>
   )
 }
